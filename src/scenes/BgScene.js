@@ -6,12 +6,10 @@ export default class BgScene extends Phaser.Scene {
   }
 
   preload() {
-    // Preload Sprites
-    // << LOAD SPRITE HERE >>
+    this.load.image('japan', 'assets/backgrounds/japan.png');
   }
 
   create() {
-    // Create Sprites
-    // << CREATE SPRITE HERE >>
+    this.add.image(0, 0, 'japan').setOrigin(0).setSize(800, 600).setScale(0.6);
   }
 }
